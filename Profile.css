@@ -1,0 +1,112 @@
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: antiquewhite;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li {
+    display: inline;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    margin-top: -50px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, animation 0.3s;
+    position: relative;
+    animation: float 3s ease-in-out infinite, rotateAnimation 3s ease-in-out infinite;
+  }
+  
+
+  .card img {
+
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid ; /* 테두리 스타일 및 색상 */
+}
+
+
+  
+  .card h2 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin: 30px 0 5px 0;
+    font-size: 50px;
+    
+  }
+  
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    animation: none;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes rotateAnimation {
+    0%, 100% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(20deg);
+    }
+  }
+  

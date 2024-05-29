@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김윤진</title>
+  <link rel="stylesheet" href="Contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav class="menu">
+      <ul>
+        <li><a href="Intro.html" ><h1 class="dongle-regular">Home🏠</h1></a></li>
+        <li><a href="Profile.html"><h1 class="dongle-regular">Profile🙋🏻‍♂️</h1></a></li>
+        <li><a href="Favorites.html"><h1 class="dongle-regular">Favorites🥰</h1></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="info-buttons">
+
+    <button onclick="toggleInfo('gmail')">
+        <img src="./img/Contact/Gmail1.png" alt="Gmail" class="button-img"> Gmail
+    </button>
+    <button onclick="toggleInfo('github')">
+      <img src="./img/Contact/Github1.png" alt="GitHub" class="button-img"> GitHub
+    </button>
+    <button onclick="toggleInfo('instagram')">
+        <img src="./img/Contact/Insta1.png" alt="Instagram" class="button-img"> Instagram
+      </button>
+    
+  </div>
+  <div id="instagram" class="info-section">
+    <h2>Instagram</h2>
+    <p>yunjin_1213</p>
+    <img src="./img/Contact/Insta2.PNG" alt="Instagram" class="responsive-img">
+  </div>
+  <div id="github" class="info-section">
+    <h2>GitHub</h2>
+    <p class="github-info">yunjin1213</p>
+    <img src="./img/Contact/Github2.png" alt="GitHub" class="responsive-img github-img">
+  </div>
+  <div id="gmail" class="info-section">
+    <h2>Gmail</h2>
+    <p>yunjinkim25@mju.ac.kr</p>
+    <img src="./img/Contact/Gmail2.png" alt="GitHub" class="responsive-img github-img">
+  </div>
+</main>
+
+<script>
+  function toggleInfo(sectionId) {
+    const sections = document.querySelectorAll('.info-section');
+    sections.forEach(section => {
+      section.style.display = section.id === sectionId ? 'block' : 'none';
+    });
+  }
+</script>
+</body>
+</html>

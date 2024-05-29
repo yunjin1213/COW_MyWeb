@@ -1,0 +1,117 @@
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 100px;
+  font-family: Arial, sans-serif;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: antiquewhite;
+}
+
+.text-box {
+  border: 2px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.nav-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  margin: 0 20px;
+}
+
+.frame {
+  width: 400px;
+  height: 450px;
+  border: 2px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+
+.frame img {
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  border: 2px;
+}
+
+.frame span {
+  font-size: 1.2em;
+  margin-top: 10px;
+  transition: transform 0.3s;
+}
+
+.nav-item .frame {
+  transform: none;
+}
+
+.nav-item:hover img {
+  transform: scale(1.1);
+}
+
+.nav-item:hover span {
+  transform: translateY(-5px);
+}
+
+.typing {
+  display: inline-block;
+  font-size: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: typing 3s steps(40) 1s 1 normal both, blink-caret 0.75s step-end infinite; /* steps(40)으로 변경하고 애니메이션 시간을 5초로 증가 */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.typing::after {
+  content: '|';
+  display: inline-block;
+  width: 0;
+  animation: blink-caret 0.75s step-end infinite;
+}

@@ -1,0 +1,98 @@
+body {
+    font-family: 'Dongle', sans-serif;
+    background-color: antiquewhite;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+  }
+  
+  .dongle-regular {
+    font-weight: 400;
+  }
+  
+  .info-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+  }
+  
+  .info-buttons button {
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 25px 35px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .info-buttons button img.button-img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .info-section {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .info-section h2 {
+    font-size: 5em;
+  }
+  
+  .info-section p {
+    font-size: 4em;
+  }
+  
+  .responsive-img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .github-img {
+    max-width: 100%; /* Adjust this value to set the desired size for GitHub image */
+    height: auto;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .github-info h1 {
+    font-size: 2em;
+  }
+  

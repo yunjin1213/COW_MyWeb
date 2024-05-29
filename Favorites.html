@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김윤진</title>
+  <link rel="stylesheet" href="Favorite.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav class="menu">
+      <ul>
+        <li><a href="Intro.html"><h1 class="dongle-regular">Home🏠</h1></a></li>
+        <li><a href="Profile.html"><h1 class="dongle-regular">Profile🙋🏻‍♂️</h1></a></li>
+        <li><a href="Contact.html"><h1 class="dongle-regular">Contact📱</h1></a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="favorites-container">
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="./img/Favorite/산책1.JPEG" alt="앞면 이미지">
+      </div>
+      <div class="card-back">
+        <img src="./img/Favorite/산책2.JPEG" alt="산책 이미지">
+        <div class="card-content">
+          <h2 class="dongle-regular" style="font-size: 50px;" >산책</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="./img/Favorite/관측1.JPEG" alt="앞면 이미지">
+      </div>
+      <div class="card-back">
+        <img src="./img/Favorite/관측2.JPEG" alt="별 관측 이미지">
+        <div class="card-content">
+          <h2 class="dongle-regular" style="font-size: 50px;" >관측</h2>
+          <p class="dongle-regular"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="./img/Favorite/최성운교수님1.JPEG" alt="앞면 이미지">
+      </div>
+      <div class="card-back">
+        <img src="img/Favorite/최성운교수님2.JPEG" alt="최성운 교수님 이미지">
+        <div class="card-content">
+          <h2 class="dongle-regular" style="font-size: 50px;" >Prof.Choi</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function flipCard(card) {
+    card.classList.toggle('flipped');
+  }
+</script>
+</body>
+</html>
